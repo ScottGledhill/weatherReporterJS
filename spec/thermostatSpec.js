@@ -29,4 +29,11 @@ describe('Thermostat', function() {
     }
   expect(thermostat.getCurrentTemperature()).toEqual(10);
   });
+
+  it('has a maximum of 100 degrees', function() {
+    for (var i = 0; i > 100; i++) {
+      thermostat.increaseTemperature();
+    }
+  expect(thermostat.getCurrentTemperature()).toEqual(100);
+  });
 });
