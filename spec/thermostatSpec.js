@@ -24,14 +24,14 @@ describe('Thermostat', function() {
   });
 
   it('has a minimum of 10 degrees', function() {
-    for (var i = 0; i < 11; i++) {
+    for (var i = 0; i < 10; i++) {
       thermostat.decreaseTemperature();
     }
   expect(thermostat.getCurrentTemperature()).toEqual(10);
   });
 
   it('has a maximum of 100 degrees', function() {
-    for (var i = 0; i > 100; i++) {
+    for (var i = 0; i < 80; i++) {
       thermostat.increaseTemperature();
     }
   expect(thermostat.getCurrentTemperature()).toEqual(100);

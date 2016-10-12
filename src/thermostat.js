@@ -2,16 +2,20 @@
 'use strict';
 
 function Thermostat() {
-  this.MINIMUM_TEMPERATURE = 10;
   this.temperature = 20;
+  this.MINIMUM_TEMPERATURE = 10;
+  this.MAXIMUM_TEMPERATURE = 100;
 }
 
 Thermostat.prototype.increaseTemperature = function() {
-  this.temperature += 1;
+  if (this.isMinimumTemperature()) {
+   return;
+ }
+ this.temperature += 1;
 };
 
 Thermostat.prototype.decreaseTemperature = function() {
-  if (this.isMinimumTemperature()) {
+  if (this.isMaximumTemperature()) {
    return;
  }
  this.temperature -= 1;
@@ -23,4 +27,8 @@ Thermostat.prototype.getCurrentTemperature = function() {
 
 Thermostat.prototype.isMinimumTemperature = function() {
   return this.temperature === this.MINIMUM_TEMPERATURE;
+};
+
+Thermostat.prototype.isMaximumTemperature = function() {
+  return this.temperature === this.MAXIMUM_TEMPERATURE;
 };
