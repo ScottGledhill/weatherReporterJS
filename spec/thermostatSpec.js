@@ -36,4 +36,12 @@ describe('Thermostat', function() {
     }
   expect(thermostat.getCurrentTemperature()).toEqual(100);
   });
+
+  it('can be reset to the default temperature', function() {
+  for (var i = 0; i < 6; i++) {
+    thermostat.increaseTemperature();
+  }
+  thermostat.resetTemperature();
+    expect(thermostat.getCurrentTemperature()).toEqual(20);
+  });
 });
