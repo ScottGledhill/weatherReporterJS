@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var thermostat = new Thermostat();
+  thermostat = new Thermostat();
   updateTemperature();
 });
 
@@ -14,7 +14,7 @@ $('#temp-down').click(function() {
 });
 
 $('#temp-reset').click(function() {
-  thermostat.reset();
+  thermostat.resetTemperature();
   updateTemperature();
 });
 
