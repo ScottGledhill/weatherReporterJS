@@ -20,4 +20,5 @@ $('#temp-reset').click(function() {
 
 function updateTemperature() {
   $('#temperature').text(thermostat.temperature);
+  $('#temperature').attr('class', thermostat.energyUsage());
 }
