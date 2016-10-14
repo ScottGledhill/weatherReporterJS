@@ -38,5 +38,6 @@ function displayWeather(city) {
  var units = '&units=metric';
  $.get(url + token + units, function(data) {
    $('#current-temperature').text(data.main.temp);
+   $('#wind-speed').text(data.wind.speed);
  });
 }
