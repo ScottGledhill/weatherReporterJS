@@ -12,16 +12,23 @@
 }
 
 .Cloudy {
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url('images/cloudy.png')
+
 }
 
 .Sky {
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url('images/sky.jpg')
 }
 
 .Rain {
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url('images/rain.jpg')
 }
