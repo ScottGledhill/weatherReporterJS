@@ -6,6 +6,7 @@ $(document).ready(function() {
     $('#wind-speed').text(data.wind.speed);
     $('#country').text(data.sys.country);
     $('#city').text(data.name);
+    $('#weather').text(data.weather[0].description);
   });
 });
 
@@ -43,5 +44,7 @@ function displayWeather(city) {
    $('#current-temperature').text(data.main.temp);
    $('#wind-speed').text(data.wind.speed);
    $('#country').text(data.sys.country);
+   $('#city').text(data.name);
+   $('#weather').text(data.weather[0].description);
  });
 }
