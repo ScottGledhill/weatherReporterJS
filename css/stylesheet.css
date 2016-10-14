@@ -10,3 +10,8 @@
 .high-usage {
   color: red;
 }
+
+.Cloudy {
+  background-repeat: no-repeat;
+  background-image: url('images/cloudy.png')
+}

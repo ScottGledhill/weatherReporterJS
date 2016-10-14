@@ -49,8 +49,10 @@ function displayWeather(city) {
     var weather = data.weather[0].description;
     selectWeatherDisplay(weather);
   });
+}
 
 function selectWeatherDisplay(weather) {
-  console.log(weather.includes("cloud"));
+  if (weather.includes("cloud") === true ) {
+    $("body").addClass('Cloudy');
   }
 }
