@@ -53,6 +53,11 @@ function displayWeather(city) {
 
 function selectWeatherDisplay(weather) {
   if (weather.includes("cloud") === true ) {
+    $("body").removeClass("Sky");
     $("body").addClass('Cloudy');
+  }
+  if (weather.includes("sky") === true ) {
+    $("body").removeClass("Cloudy");
+    $("body").addClass('Sky');
   }
 }

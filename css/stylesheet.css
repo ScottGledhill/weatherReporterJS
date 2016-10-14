@@ -15,3 +15,8 @@
   background-repeat: no-repeat;
   background-image: url('images/cloudy.png')
 }
+
+.Sky {
+  background-repeat: no-repeat;
+  background-image: url('images/sky.jpg')
+}
