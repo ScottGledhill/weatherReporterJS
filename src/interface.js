@@ -7,6 +7,8 @@ $(document).ready(function() {
     $('#country').text(data.sys.country);
     $('#city').text(data.name);
     $('#weather').text(data.weather[0].description);
+    var weather = data.weather[0].description;
+    selectWeatherDisplay(weather);
   });
 });
 
