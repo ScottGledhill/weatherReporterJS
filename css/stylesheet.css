@@ -12,7 +12,8 @@
 }
 
 .Cloudy {
-  background-size: contain;
+  background-position:50% 70%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('images/cloudy.png')
@@ -20,14 +21,17 @@
 }
 
 .Sky {
-  background-size: contain;
+  background-position:50% 70%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('images/sky.jpg')
+
 }
 
 .Rain {
-  background-size: contain;
+  background-position:50% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('images/rain.jpg')
