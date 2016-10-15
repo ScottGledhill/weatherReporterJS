@@ -35,7 +35,6 @@ function updateTemperature() {
 $('#select-city').submit(function(event) {
   event.preventDefault();
   var city = $('#current-city').val();
-  $('.typeahead').typeahead('open');
   displayWeather(city);
 });
 
